@@ -35,6 +35,7 @@ import AdminDroneManager from "./admin/pages/AdminDroneManager";
 /* RESTAURANT ADMIN */
 import RestaurantDashboard from "./components/RestaurantDashboard";
 import RestaurantProducts from "./components/RestaurantProducts";
+import RestaurantDashboards from "./components/RestaurantDashboards"
 import DroneList from "./components/DroneList";
 
 /* ✅ Protected Routes */
@@ -206,6 +207,7 @@ function App() {
             <Route index element={<RestaurantDashboard />} />
             <Route path="products" element={<RestaurantProducts />} />
             <Route path="drones" element={<DroneList />} />
+            <Route path="dashboards" element={<RestaurantDashboards />} />
           </Route>
         </Routes>
       </BrowserRouter>

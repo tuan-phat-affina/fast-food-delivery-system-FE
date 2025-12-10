@@ -28,6 +28,14 @@ export default function RestaurantLayout() {
         <p className="restaurant-id"> {currentUser.restaurantName}</p>
 
         <nav className="restaurant-nav">
+            <Link
+                        to="/restaurantadmin/dashboards"
+                        className={`restaurant-link ${
+                          location.pathname.includes("/dashboards") ? "active" : ""
+                        }`}
+                      >
+                        📊 Dashboard
+                      </Link>
           <Link
             to="/restaurantadmin"
             className={`restaurant-link ${

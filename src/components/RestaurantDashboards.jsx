@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { message, Select } from "antd";
 import "./Dashboard.css";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 import {
   LineChart,
   Line,
@@ -161,11 +161,6 @@ export default function AdminDashboard() {
 
       {/* Cards */}
       <div className="cards">
-
-        <div className="card orange">
-          <h2>{stats.totalRestaurants}</h2>
-          <p>Tổng số nhà hàng</p>
-        </div>
 
         <div className="card green">
           <h2>{stats.totalOrders}</h2>
